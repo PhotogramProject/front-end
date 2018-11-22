@@ -1,0 +1,69 @@
+.card{
+  padding: 10px;
+
+}
+
+.redCard{
+  background: radial-gradient(#ffcdd2, #ffebee) !important;
+}
+
+.greenCard{
+  background: radial-gradient(#c8e6c9, #e8f5e9);
+}
+
+.orangeCard{
+  background: radial-gradient(#ffe0b2, #fff3e0) !important;
+}
+
+.warning-message{
+  margin-bottom: 0;
+  margin-top: -10px;
+}
+
+
+.materialboxedimage{
+  min-height: 300px;
+  max-height: 300px;
+}
+
+@media all and (max-width: 782px){
+  .container{
+    width: 100%;
+  }
+  .row, .col{
+    margin: 0 !important;
+  }
+
+}
+
+@media all and (max-width: 993px){
+  .materialboxedimage{
+    max-height: 100%;
+  }
+}
+
+.materialboxed{
+  cursor: pointer;
+}
+
+.upImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upImg:hover {opacity: 0.7;}
+
+.imageCommentWrapper{
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]), textarea:focus:not([readonly]) {
+  border-color: dodgerblue;
+  box-shadow: 0 1px 0 0 dodgerblue;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly])+label, textarea:not(.browser-default):focus:not([readonly])+label{
+  color: dodgerblue;
+}

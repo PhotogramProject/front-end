@@ -1,0 +1,91 @@
+<!--Preloader-->
+<div *ngIf="!userDetailsLoaded" class="container center">
+  <div class="divider"></div>
+  <div *ngIf="!userDetailsLoaded" class="preloader-wrapper small active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div>
+      <div class="gap-patch">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="userDetailsLoaded" class="data-wrapper">
+  <div class="container center row">
+    <div class="divider"></div>
+    <div class="divider"></div>
+    <div class="container row">
+      <div *ngIf="userDetailsLoaded" class="col s12 m12 l12 user-data-container">
+        <div class="row user-role-wrapper">
+          <span class="user-role">{{this.role}}</span>
+        </div>
+        <div class="row user-data-wrapper center">
+          <img src="{{userAvatar}}" class="responsive-image circle avatar-placeholder"/>
+          <div>
+          <p class="user-name">{{this.name}}</p>
+          <p class="username">({{this.username}})</p>
+        </div>
+        <div class="row user-data-wrapper center">
+          <div class="col s12 m12 l6 ">
+            <p class="additional-heading">Пътешествия</p>
+            <p class="additional-text">{{this.userObj.totalJourneys}}</p>
+            <span>
+                <a class="waves-effect waves-light btn-small green" routerLink="/journeys/create" [ngClass]="{'disabled': userObj.blocked}"><i class="material-icons left">add</i>Качи</a>
+              <br/>
+               <span *ngIf="userObj.blocked" class="red-text" style="font-size: 12px;" title="Вашият профил е блокиран. Не можете да създавате пътешествия">
+                    Вашият профил е блокиран. Не можете да създавате пътешествия.
+                  </span>
+            </span>
+          </div>
+          <div class="col s12 m12 l6"><p class="additional-heading">Имейл</p>
+            <p class="additional-text">{{this.email}}</p></div>
+          <span>
+            <a class="waves-effect waves-light btn-small orange" (click)="showModal('emailModal')"><i class="material-icons left">edit</i>Промени</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="divider"></div>
+  </div>
+</div>
+
+
+<!-- Email change Modal -->
+<div id="emailModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" (click)="closeModal('emailModal')">&times;</span>
+    <div class="email-modal-container">
+      <div class="input-field">
+        <input id="email_inline" type="email" [ngModel]="newEmail" (ngModelChange)="onEmailChange($event)">
+        <label for="email_inline">E-mail</label>
+        <span class="helper-text">Моля въведете вашият нов e-mail</span>
+      </div>
+    </div>
+
+    <button id="updateEmailButton" class="btn orange" (click)="updateUserEmail()">Промени</button>
+    <button class="btn grey" (click)="closeModal('emailModal')">Отмени</button>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="container">
+    <div class="journeysWrapper center container">
+      <!--Journeys-->
+      <div class="journeysWrapper" infiniteScroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="0" (scrolled)="loadMoreJourneys()">
+        <app-my-journey-preview *ngFor="let journey of journeysArr" [journey]="journey" [journeyCount]="journeysCount" class="center row container"></app-my-journey-preview>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

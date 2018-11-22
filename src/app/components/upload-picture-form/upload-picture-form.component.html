@@ -1,0 +1,30 @@
+<div class="col s12 m12 l4">
+  <div class="card hoverable" [class.redCard]="!photo.hasExif" [class.greenCard]="photo.hasExif" [class.orangeCard]="photo.location.length === 0 && photo.hasExif" >
+    <div class="card-image" *ngIf="photo.localID || photo.id">
+      <img src="{{photo.encoded}}" id="localIMG-{{photo.localID}}" class="previewImage activator materialboxed materialboxedimage upImg ">
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4 row"><i class="material-icons right">close</i></span>
+      <span class="row img-det" *ngIf="photo.showSize === true"><span class="chip left"><b>Размер:</b></span><span class="right">{{(photo.size).toFixed(2) + "KB"}}</span></span>
+      <span class="row img-det"><span class="chip left"><b>Координати:</b></span><span class="right">
+                  <span *ngIf="photo.location.length > 0"><i class="material-icons green-text">check</i></span>
+                  <span *ngIf="photo.location.length === 0" class="red-text"><i class="material-icons red-text">close</i></span>
+                </span></span>
+      <span class="row"><span class="chip left"><b>EXIF данни:</b></span><span class="right">
+                  <span *ngIf="photo.hasExif"><i class="material-icons green-text">check</i></span>
+                  <span *ngIf="!photo.hasExif" class="red-text"><i class="material-icons red-text">close</i></span>
+                </span></span>
+      <span class="row"><span class="chip left"><b>Визуализация:</b></span><span class="right">
+                  <span *ngIf="photo.location.length > 0"><i class="material-icons green-text">check</i></span>
+                  <span *ngIf="photo.location.length === 0" class="red-text"><i class="material-icons red-text">close</i></span>
+                </span></span>
+      <div class="row center red-text warning-message" *ngIf="!photo.hasExif">
+        Тази снимка няма да бъде добавена към пътешествието, поради липса на EXIF данни.
+      </div>
+    </div>
+  </div>
+  <div class="imageCommentWrapper">
+    <input id="imageComment" type="text" name="imageComment" maxlength="60" placeholder="Коментар" (input)="updateImageComment($event.target.value)">
+  </div>
+</div>
+

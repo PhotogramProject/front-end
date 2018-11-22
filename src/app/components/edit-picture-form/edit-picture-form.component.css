@@ -1,0 +1,224 @@
+.card {
+  padding: 10px;
+  background: radial-gradient(#bdbdbd, #e0e0e0, #fafafa, #fff);
+}
+
+.materialboxedimage{
+  min-height: 300px;
+  max-height: 300px;
+}
+
+@media all and (max-width: 782px){
+  .container{
+    width: 100%;
+  }
+  .row, .col{
+    margin: 0 !important;
+  }
+
+}
+
+@media all and (max-width: 993px){
+  .materialboxedimage{
+    max-height: 100%;
+  }
+}
+
+.materialboxed{
+  cursor: pointer;
+}
+.marg{
+  margin: 10px 0 15px 0;
+  cursor: default;
+}
+
+.material-icons{
+  cursor: default;
+}
+
+.adjustIcon{
+  transform: scale(0.6);
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+
+.upImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  max-height: 100% !important;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80% !important;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+  .pad-left{
+    padding-left: 20px;
+  }
+}
+
+.pull-left{
+  text-align: left;
+  float: left;
+}
+
+.align-left{
+  text-align: left;
+  margin-bottom: 0 !important;
+}
+
+.camera-model{
+  font-size: 20px;
+}
+
+.modal-image{
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+
+.modal-image{
+  max-height: 800px !important;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200%;
+  background-color: #424242;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 15%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #424242 transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+@media all and (max-width: 993px) {
+  .tooltip .tooltiptext {
+    visibility: visible;
+    width: 150%;
+    margin-bottom: 20px;
+  }
+}
+.camera-alt{
+  text-align: left;
+}
+.delimeter{
+  height: 2px;
+  color: white;
+  background-color: white;
+}
+
+.imageCommentWrapper{
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]), textarea:focus:not([readonly]) {
+  border-color: dodgerblue;
+  box-shadow: 0 1px 0 0 dodgerblue;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly])+label, textarea:not(.browser-default):focus:not([readonly])+label{
+  color: dodgerblue;
+}

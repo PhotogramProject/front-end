@@ -1,0 +1,18 @@
+<div class="tab">
+  <button class="tablinks" (click)="openTab($event, 'users')">Потребители</button>
+  <button class="tablinks" (click)="openTab($event, 'journeys')">Пътешествия</button>
+  <button class="tablinks" (click)="openTab($event, 'images')">Изображения</button>
+</div>
+
+
+<div id="users" class="tabcontent">
+  <app-admin-users-table *ngIf="tab === 'users'"></app-admin-users-table>
+</div>
+
+<div id="journeys" class="tabcontent">
+  <app-admin-journeys-table *ngIf="tab === 'journeys'"></app-admin-journeys-table>
+</div>
+
+<div id="images" class="tabcontent">
+  <app-admin-images-table *ngIf="tab === 'images'"></app-admin-images-table>
+</div>
