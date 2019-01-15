@@ -14,6 +14,7 @@ export class JourneyService {
 
   createJourney(name, description, files){
     let fd = new FormData();
+    console.log(files);
     for (let i = 0; i < files.length; i++) {
       fd.append(`images[]`, JSON.stringify({
           make: files[i].details.make,
