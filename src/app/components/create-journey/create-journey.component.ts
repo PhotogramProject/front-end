@@ -58,6 +58,8 @@ export class CreateJourneyComponent implements OnInit {
       const fileReader: FileReader = new FileReader();
       fileReader.readAsDataURL(file);
       fileReader.onload = (e) => {
+        console.log(file.exifdata);
+        console.log(file);
         EXIF.getData(file, () => {
           let imgObj = {
             position: 'TRANSIT',
