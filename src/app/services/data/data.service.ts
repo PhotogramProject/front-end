@@ -25,6 +25,7 @@ export class DataService {
 
     localStorage.setItem('authtoken', data.auth_token || '');
     localStorage.setItem('username', data.username);
+    localStorage.setItem('name', data.firstName + ' ' + data.lastName);
     localStorage.setItem('userId', data.id);
     localStorage.setItem('logged', 'true');
     localStorage.setItem('status', data.blocked);

@@ -27,9 +27,14 @@
 }
 
 .card-author{
-  text-align: right;
   margin-top:20px;
   margin-bottom: -20px;
+}
+
+@media screen and (max-width: 783px) {
+  .card-author .chip{
+    text-align: left !important;
+  }
 }
 
 .progress{
@@ -42,4 +47,8 @@
 
 .userAvatar{
   display: none;
+}
+
+.ratings{
+  margin-top: -15px !important;
 }
