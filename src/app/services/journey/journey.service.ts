@@ -12,6 +12,16 @@ export class JourneyService {
   constructor(private http: HttpClient, private toastr: ToastrService, private router: Router, private util: UtilityService) {
   }
 
+  validateImage(file){
+    let fd = new FormData();
+    fd.append(`imageToValidate`, file);
+
+    return this.http.post(`${this.phpURL}/api/images/validator.php`, fd, {
+      headers: new HttpHeaders().set('Authentication', `Bearer ${localStorage.getItem('authtoken')}`)
+    });
+  }
+
+
   createJourney(name, description, files){
     let fd = new FormData();
     console.log(files);
@@ -99,6 +109,7 @@ export class JourneyService {
 
   // UPDATE
   updateJourney(journey, files = [], forUpdate = []): Observable<any> {
+
     let fd = new FormData();
 
     for (let i = 0; i < files.length; i++) {

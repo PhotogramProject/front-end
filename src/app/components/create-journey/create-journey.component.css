@@ -62,6 +62,17 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label, textarea:not
   color: dodgerblue;
 }
 
+.determinate{
+  background-color: dodgerblue;
+}
+
 .map-container{
   background: linear-gradient(0deg, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.redText{
+  color: darkred;
+}
+.greenText{
+  color: green;
 }

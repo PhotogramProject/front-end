@@ -1,12 +1,13 @@
 <div class="col s12 m12 l4">
   <div class="card hoverable">
+    <a class="btn-floating btn-large halfway-fab waves-effect waves-light big blue editButton activator" (click)="showModal(photo.id)"><i class="material-icons">info_outline</i></a>
     <div class="card-image">
       <img *ngIf="photo.comment !== ''"src="{{imgLocation}}" class="materialboxed materialboxedimage upImg" alt="{{photo.comment}}" (click)="showModal(photo.id)">
       <img *ngIf="photo.comment == ''" src="{{imgLocation}}" class="materialboxed materialboxedimage upImg" alt="Photogram Image taken with {{photo.make}} {{photo.model}}" (click)="showModal(photo.id)">
     </div>
   </div>
   <div class="imageCommentWrapper">
-    <input id="imageComment" type="text" name="imageComment" maxlength="60" placeholder="Коментар" (input)="updateImageComment($event.target.value)" value="{{photo.comment}}">
+    <input id="imageComment" type="text" name="imageComment" maxlength="60" placeholder="Коментар (макс. 60 символа)" (input)="updateImageComment($event.target.value)" value="{{photo.comment}}">
   </div>
 </div>
 

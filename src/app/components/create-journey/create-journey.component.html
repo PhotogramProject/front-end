@@ -32,8 +32,18 @@
         </div>
       </form>
       <div class="uploadedPhotosWrapper">
-        <div *ngIf="!selectedPictures.length" class="red-text">
+        <div *ngIf="!selectedPictures.length && !uploadingImagesProcess" class="red-text">
           <p>Моля качете вашите снимки, за да видите детайли <span class="red-text text-darken-4">(максимален размер на снимка: 10МB)</span></p>
+        </div>
+        <div *ngIf="uploadingImagesProcess || selectedPictures.length">
+          <div class="progress blue lighten-4">
+            <div class="determinate imagesUploadedProgressBar" style="max-width: 100% !important;"></div>
+          </div>
+          <p class="black-text">
+            <span *ngIf="uploadedImagesCount < imagesForUpload - invalidImagesCount"><b>Качване на {{uploadedImagesCount}} от {{imagesForUpload}} избрани снимки ... </b></span>
+            <span class="green-text" *ngIf="uploadedImagesCount === imagesForUpload - invalidImagesCount"><b><i class="material-icons">check</i> Качени са {{uploadedImagesCount}} от {{imagesForUpload}} избрани снимки</b></span>
+            <span [class.redText]="invalidImagesCount > 0" [class.greenText]="invalidImagesCount === 0"><b> ({{invalidImagesCount}} неуспешно качени снимки)</b></span>
+          </p>
         </div>
         <div *ngIf="selectedPictures.length">
           <app-upload-picture-form *ngFor="let photo of selectedPictures" [photo]="photo"></app-upload-picture-form>
