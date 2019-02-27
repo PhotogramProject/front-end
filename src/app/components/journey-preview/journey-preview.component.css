@@ -17,7 +17,7 @@
 }
 
 .card-image, .card-image img{
-  max-height: 400px;
+  max-height: 390px !important;
 }
 
 .card-content .card-title{

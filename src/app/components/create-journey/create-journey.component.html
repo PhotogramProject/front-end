@@ -67,5 +67,21 @@
 
   <div class="divider"></div>
 </div>
+
+<div *ngIf="uploadingJourneyProcess">
+  <div  class="modal">
+    <div class="modal-content">
+    <div >
+      <h5><b><span class="grey-text text-darken-1">Създаване на пътешествието:</span> <i class="grey-text text-darken-4">{{journeyName}}</i></b></h5>
+      <div class="loadingContainer">
+        <p class="uploadingInfo"><span><b>Качване на {{uploadedImagesToServerCount}} от {{imagesForUpload}} избрани снимки ... </b></span></p>
+        <div class="progress uploadingProgress">
+          <div class="indeterminate uploadingIndeterminate"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
 <app-footer></app-footer>
 

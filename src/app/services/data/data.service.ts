@@ -10,7 +10,7 @@ export class DataService {
   getAPI() {
     return {
       avatars: `${this.protocol}://${this.host}/uploads/avatars/`,
-      uploads: `${this.protocol}://${this.host}/uploads/users/`
+      uploads: `${this.protocol}://${this.host}/uploads/images/`
     };
   }
   getDomainDetails(){

@@ -14,9 +14,9 @@
     <span class="close" (click)="closeImageModal('photoModal')">&times;</span>
     <div class="col s12 m12 l8">
       <img *ngIf="photo.comment !== ''" alt="{{photo.comment}}" class="modal-content modal-image" id="img-{{photo.id}}"
-           src="{{imagePath}}">
+           src="{{imagePathLarge}}">
       <img *ngIf="photo.comment == ''" alt="Photogram Image taken with {{photo.make}} {{photo.model}}"
-           class="modal-content modal-image" id="img-{{photo.id}}" src="{{imagePath}}">
+           class="modal-content modal-image" id="img-{{photo.id}}" src="{{imagePathLarge}}">
       <div class="modal-content">
         <p class="white-text left photoComment"><b class="text-enlarge" *ngIf="photo.comment.length > 0">Допълнителна информация: </b> {{photo.comment}}</p>
       </div>
@@ -142,7 +142,7 @@
 
         <div class="row">
           <div class="col s12 l12 m12 left left-align">
-            <a id="download-{{photo.id}}" class="btn blue btn-pad" href="{{imagePath}}" target="_blank"
+            <a id="download-{{photo.id}}" class="btn blue btn-pad" href="{{imagePathOriginal}}" target="_blank"
                download="asd.jpg">Изтегли снимката</a>
           </div>
         </div>

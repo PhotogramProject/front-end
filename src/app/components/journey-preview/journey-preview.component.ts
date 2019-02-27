@@ -18,7 +18,7 @@ export class JourneyPreviewComponent implements OnInit {
   ngOnInit(){
     this.journey.averageRating = this.calculateJourneyRating(this.journey);
     this.journey.dateCreated = this.journey.dateCreated.substr(0, 10);
-    this.featuredImageSrc = this.dataService.getAPI().uploads + this.journey.featuredImage;
+    this.featuredImageSrc = this.dataService.getAPI().uploads + this.journey.featuredImage + '_m.jpg';
     this.authorAvatarSrc = this.dataService.getAPI().avatars + this.journey.avatar;
   }
 

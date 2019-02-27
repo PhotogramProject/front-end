@@ -127,56 +127,6 @@ export class EditJourneyComponent implements OnInit {
         };
       }
     }
-/*
-
-    // handle file input changes
-    for (let i = 0; i < files.length; i++) {
-      const file: any = files[i];
-      // validate image size limits
-      const validator = this.auth.validatePostPicture(file);
-      if (!validator.isValid) {
-        this.toastrService.toast(validator.msg);
-        continue;
-      }
-      // read the file for future encoding
-      const fileReader: FileReader = new FileReader();
-      fileReader.readAsDataURL(file);
-      fileReader.onload = (e) => {
-        // extract file EXIF data
-        EXIF.getData(file, () => {
-          let imgObj = {
-            position: 'TRANSIT',
-            id: btoa(file.name),
-            size: file.size / 1024,
-            make: file.exifdata.Make ? file.exifdata.Make.toUpperCase() : '',
-            model: file.exifdata.Model ? file.exifdata.Model.toUpperCase() : '',
-            dateTaken: file.exifdata.DateTimeOriginal,
-            location: this.journeyService.extractFileLocation(file),
-            resolution: [file.exifdata.PixelXDimension, file.exifdata.PixelYDimension],
-            flash: file.exifdata.Flash,
-            iso: file.exifdata.ISOSpeedRatings,
-            focalLength: file.exifdata.FocalLength,
-            hasExif: Object.keys(file.exifdata).length > 0,
-            showSize: true,
-            encoded: fileReader.result,
-            fileName: '',
-            displayType: 'create'
-          };
-          // push file object to array of selected files for upload and to markers array for live update of the journey
-          this.selectedFiles.push({file, fileID: imgObj.id, details: imgObj});
-          this.selectedPictures.push(imgObj);
-          this.imageMarkers.push({
-            ID: imgObj.id, coordinates: imgObj.location, timestamp: imgObj.dateTaken, thumbnail: imgObj.encoded, displayType: imgObj.displayType
-          });
-        });
-
-      };
-      fileReader.onerror = (error) => {
-        this.toastrService.toast('Възникна проблем при качването на снимка.');
-      };
-    }
-*/
-
     // live connection of the markers
     this.map.connectEditMarkers(this.imageMarkers);
   }
