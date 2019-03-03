@@ -1,5 +1,8 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import {ToastrService} from '../../services/toastr/toastr.service';
+import {AdminService} from '../../services/admin/admin.service';
+import {DataService} from '../../services/data/data.service';
+import {CommentsService} from '../../services/comments/comments.service';
 
 declare const $: any;
 
@@ -9,58 +12,45 @@ declare const $: any;
   styleUrls: ['./journey-comments-sidebar.component.css']
 })
 export class JourneyCommentsSidebarComponent implements OnInit {
+  @Input() journeyID;
 
-  constructor(private toastr: ToastrService) {
+  constructor(private toastr: ToastrService, private adminService: AdminService,
+              private dataService: DataService, private commentsService: CommentsService) {
   }
 
-  imageComments = [{
-    comment: 'This is a square image. Add the "circle" class to it to make it appear circular.',
-    date: '08-10-2018',
-    name: 'Ivan Ivanov',
-    user: 'sample_username',
-    avatarSrc: '../../../assets/images/default-avatar.png'
-  }, {
-    comment: 'This is a square image. Add the "circle" class to it to make it appear circular.',
-    date: '08-10-2018',
-    name: 'Ivan Ivanov',
-    user: 'sample_username',
-    avatarSrc: '../../../assets/images/default-avatar.png'
-  }, {
-    comment: 'This is a square image. Add the "circle" class to it to make it appear circular.',
-    date: '08-10-2018',
-    name: 'Ivan Ivanov',
-    user: 'sample_username',
-    avatarSrc: '../../../assets/images/default-avatar.png'
-  }, {
-    comment: 'This is a square image. Add the "circle" class to it to make it appear circular.',
-    date: '08-10-2018',
-    name: 'Ivan Ivanov',
-    user: 'sample_username',
-    avatarSrc: '../../../assets/images/default-avatar.png'
-  }, {
-    comment: 'This is a square image. Add the "circle" class to it to make it appear circular.',
-    date: '08-10-2018',
-    name: 'Ivan Ivanov',
-    user: 'sample_username',
-    avatarSrc: '../../../assets/images/default-avatar.png'
-  }, {
-    comment: 'This is a square image. Add the "circle" class to it to make it appear circular.',
-    date: '08-10-2018',
-    name: 'Ivan Ivanov',
-    user: 'sample_username',
-    avatarSrc: '../../../assets/images/default-avatar.png'
-  }, {
-    comment: 'This is a square image. Add the "circle" class to it to make it appear circular.',
-    date: '08-10-2018',
-    name: 'Ivan Ivanov',
-    user: 'sample_username',
-    avatarSrc: '../../../assets/images/default-avatar.png'
-  }];
-
+  journeyComments = [];
+  type = 'journey';
   sidebarOpened = false;
   myComment = '';
+  upcommingResults = true;
+  commentsCount = 0;
+  limitCount = 8;
 
   ngOnInit() {
+    this.retrieveComments();
+  }
+
+  retrieveComments(){
+    if(this.upcommingResults){
+      this.commentsService.retrieveComments(this.type , this.journeyID, this.commentsCount).subscribe((res: any) => {
+        if (res.data.length < this.limitCount) {
+          this.upcommingResults = false;
+        }
+        for (let el of res.data) {
+          this.journeyComments.push(el);
+          this.commentsCount++;
+        }
+      }, err => {
+        this.upcommingResults = false;
+        this.toastr.errorToast((err.error.description ? err.error.description : 'Възникна грешка, моля опитайте отново'));
+      });
+    }
+  }
+
+  loadMoreComments() {
+    if (this.upcommingResults) {
+      this.retrieveComments();
+    }
   }
 
   openNav() {
@@ -79,16 +69,30 @@ export class JourneyCommentsSidebarComponent implements OnInit {
 
   submitComment() {
     if (this.myComment.trim() !== '') {
-      this.imageComments.splice(0, 0, {
-        comment: this.myComment,
-        user: localStorage.getItem('username'),
-        date: '10-10-2019',
-        name: localStorage.getItem('name'),
-        avatarSrc: '../../../assets/images/default-avatar.png'
+      this.commentsService.addComment({
+        content: this.myComment,
+        type: 'journey',
+        property_id: Number(this.journeyID),
+        author: Number(localStorage.getItem('userId')),
+        date_added: `${new Date().getFullYear()}-${('0' + (new Date().getMonth() + 1)).slice(-2)}-${('0' + (new Date().getDate())).slice(-2)}`
+      }).subscribe((res: any) => {
+        if (!res.success || res === null) {
+          this.toastr.errorToast(res.msg);
+        } else {
+          this.toastr.successToast(res.msg);
+          this.adminService.getUserByUsername(localStorage.getItem('username')).subscribe((res: any) => {
+            this.journeyComments.unshift({
+              content: this.myComment,
+              dateAdded: `${new Date().getFullYear()}-${('0' + (new Date().getMonth() + 1)).slice(-2)}-${('0' + (new Date().getDate())).slice(-2)}`,
+              author: localStorage.getItem('name'),
+              username: localStorage.getItem('username'),
+              avatar: res.data.avatar
+            });
+            $('.commentTextarea').val('');
+            this.myComment = '';
+          });
+        }
       });
-      $('.commentTextarea').val('');
-      this.myComment = '';
-      window.scrollTo(0,0);
     }
   }
 }

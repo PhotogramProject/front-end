@@ -8,29 +8,9 @@
   <a href="javascript:void(0)" class="closebtn" (click)="closeNav()"><i class="small material-icons black-text">close</i></a>
   <div class="commentsContainer col s12 m12 l12" *ngIf="sidebarOpened">
     <div class="container commentsBackgroundContainer">
-      <div *ngFor="let a of imageComments">
-        <div class="col s12 m12 l12">
-          <div>
-            <div class="row commentWrapper">
-              <div class="row col s12 m12 l1 avatarPlaceholder">
-                <a routerLink="/users/{{a.user}}">
-                <img src="{{a.avatarSrc}}" width="60" height="60" alt=""
-                     class="circle responsive-img">
-                </a>
-              </div>
-              <div class="row col s12 m12 l11 left">
-                <span class="commentAuthor">
-                  <a routerLink="/users/{{a.user}}"><b>{{a.name}} </b>({{a.user}})</a><span class="grey-text text-darken-2"> | Добавен на: {{a.date}}</span>
-                </span>
-                <br>
-                <span class="commentContent">
-                {{a.comment}}
-              </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        <app-comment-wrapper *ngFor="let commentContent of journeyComments"
+                             [commentContent]="commentContent" [type]="type"></app-comment-wrapper>
+      <a *ngIf="upcommingResults" (click)="loadMoreComments()" class="loadMoreCommentsButton waves-effect waves-light btn blue">Заредете още коментари</a>
     </div>
     <div class="addCommentWrapper">
       <div class="row">

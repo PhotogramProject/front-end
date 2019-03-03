@@ -26,6 +26,7 @@ import {UserPageComponent} from '../../components/user-page/user-page.component'
 import {MostVisitedComponent} from '../../components/most-visited/most-visited.component';
 import {JourneyCommentsSidebarComponent} from '../../components/journey-comments-sidebar/journey-comments-sidebar.component';
 
+
 export const ExportComponentsObj = {
   App: AppComponent,
   Navigation: NavigationComponent,
@@ -53,5 +54,5 @@ export const ExportComponentsObj = {
   AdminJourneysTable: AdminJourneysTableComponent,
   UserPage: UserPageComponent,
   MostVisitedPlaces: MostVisitedComponent,
-  JourneyCommentsSidebar: JourneyCommentsSidebarComponent
+  JourneyCommentsSidebar: JourneyCommentsSidebarComponent,
 };

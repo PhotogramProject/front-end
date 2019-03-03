@@ -21,8 +21,14 @@ export class JourneyImageComponent implements OnInit {
   imagePathOriginal: string;
   imageComments = [];
   myComment = '';
+  type = 'image';
+  upcommingResults = true;
+  limitCount = 8;
+  commentsCount = 0;
 
-  constructor(private mapService: MapService, private journeyService: JourneyService, private sanitizer: DomSanitizer, private dataService: DataService, private utility: UtilityService, private commentsService: CommentsService, private toastr: ToastrService, private adminService: AdminService) {
+  constructor(private mapService: MapService, private journeyService: JourneyService, private sanitizer: DomSanitizer,
+              private dataService: DataService, private utility: UtilityService, private commentsService: CommentsService,
+              private toastr: ToastrService, private adminService: AdminService) {
   }
 
   ngOnInit() {
@@ -35,34 +41,32 @@ export class JourneyImageComponent implements OnInit {
     this.mapService.showRetrievedImage(this.photo, this.imagePath);
   }
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
   showImageModal() {
     this.utility.showImageModal(this.photo.id);
-    this.imageComments = [{
-      comment: 'This is a square image. Add the "circle" class to it to make it appear circular.This is a square image. Add the "circle" class to it to make it appear circular.This is a square image. Add the "circle" class to it to make it appear circular.This is a square image. Add the "circle" class to it to make it appear circular.This is a square image. Add the "circle" class to it to make it appear circular.This is a square image. Add the "circle" class to it to make it appear circular.',
-      date: '08-10-2018',
-      name: 'Ivan Ivanov',
-      user: 'sample_username',
-      avatarSrc: '../../../assets/images/default-avatar.png'
-    }, {
-      comment: 'This is a square image. Add the "circle" class to it to make it appear circular.',
-      date: '08-10-2018',
-      name: 'Stoyan Minchev',
-      user: 'stomin',
-      avatarSrc: '../../../assets/images/default-avatar.png'
-    }, {
-      comment: 'This is a square image. Add the "circle" class to it to make it appear circular.',
-      date: '08-10-2018',
-      name: 'Deyan Peychev',
-      user: 'deyan_peychev',
-      avatarSrc: '../../../assets/images/default-avatar.png'
-    }];
+    this.retrieveComments();
+  }
+
+  retrieveComments() {
+    if(this.upcommingResults){
+      this.commentsService.retrieveComments(this.type, this.photo.id, this.commentsCount).subscribe((res: any) => {
+        console.log(res);
+        if (res.data.length < this.limitCount) {
+          this.upcommingResults = false;
+        }
+        for (let el of res.data) {
+          this.imageComments.push(el);
+          this.commentsCount++;
+        }
+      }, err => {
+        this.upcommingResults = false;
+        this.toastr.errorToast((err.error.description ? err.error.description : 'Възникна грешка, моля опитайте отново'));
+      });
+    }
   }
 
 // When the user clicks on <span> (x), close the modal
   closeImageModal(className) {
     this.utility.closeImageModal(className);
-    this.imageComments = [];
   }
 
   prepareComment(ev) {
@@ -84,17 +88,23 @@ export class JourneyImageComponent implements OnInit {
           this.toastr.successToast(res.msg);
           this.adminService.getUserByUsername(localStorage.getItem('username')).subscribe((res: any) => {
             this.imageComments.unshift({
-              comment: this.myComment,
-              date: `${new Date().getFullYear()}-${('0' + (new Date().getMonth() + 1)).slice(-2)}-${('0' + (new Date().getDate())).slice(-2)}`,
-              name: localStorage.getItem('name'),
-              user: localStorage.getItem('username'),
-              avatarSrc: this.dataService.getAPI().avatars + res.data.avatar
+              content: this.myComment,
+              dateAdded: `${new Date().getFullYear()}-${('0' + (new Date().getMonth() + 1)).slice(-2)}-${('0' + (new Date().getDate())).slice(-2)}`,
+              author: localStorage.getItem('name'),
+              username: localStorage.getItem('username'),
+              avatar: res.data.avatar
             });
             $('.commentTextarea').val('');
             this.myComment = '';
           });
         }
       });
+    }
+  }
+
+  loadMoreComments() {
+    if (this.upcommingResults) {
+      this.retrieveComments();
     }
   }
 }

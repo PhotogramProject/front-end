@@ -19,4 +19,10 @@ export class CommentsService {
     });
   }
 
+  retrieveComments(type, propertyID, skipCount){
+    return this.http.get(`${this.phpURL}/api/comments/all.php?type=${type}&property=${propertyID}&skip=${skipCount}`, {
+      headers: new HttpHeaders().set('Authentication', `Bearer ${localStorage.getItem('authtoken')}`)
+    });
+  }
+
 }

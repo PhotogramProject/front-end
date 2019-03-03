@@ -333,4 +333,8 @@ input[type=text]:not(.browser-default):focus:not([readonly]) + i, .input-field .
   }
 }
 
+.loadMoreCommentsButton{
+  margin-top: -20px;
+  margin-bottom: 50px;
+}
 

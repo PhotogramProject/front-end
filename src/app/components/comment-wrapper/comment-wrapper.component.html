@@ -1,0 +1,43 @@
+<div class="col s12 m12 l12" *ngIf="type === 'journey'" id="journeyComment-{{commentContent.id}}">
+  <div>
+    <div class="row commentWrapper">
+      <div class="row col s12 m12 l1 avatarPlaceholder">
+        <a routerLink="/users/{{commentContent.username}}">
+          <img src="{{commentContent.avatarSrc}}" width="60" height="60" alt=""
+               class="circle responsive-img">
+        </a>
+      </div>
+      <div class="row col s12 m12 l11 left">
+                <span class="commentAuthor">
+                  <a routerLink="/users/{{commentContent.username}}"><b>{{commentContent.author}} </b>({{commentContent.username}})</a><span class="grey-text text-darken-2"> | Добавен на: {{commentContent.dateAdded}}</span>
+                </span>
+        <br>
+        <span class="commentContent">
+                {{commentContent.content}}
+              </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col s12 m12 l12" *ngIf="type === 'image' " id="imageComment-{{commentContent.id}}">
+  <div class="white-text">
+    <div class="row commentWrapper">
+      <div class="row col s12 m12 l1 ">
+        <a routerLink="/users/{{commentContent.username}}">
+          <img src="{{commentContent.avatarSrc}}" width="60" height="60" alt=""
+               class="circle responsive-img">
+        </a>
+      </div>
+      <div class="row col s12 m12 l11 left">
+                <span class="white-text commentAuthor">
+                  <a routerLink="/users/{{commentContent.username}}"><b>{{commentContent.author}} </b>({{commentContent.username}})</a><span class="grey-text"> | Добавен на: {{commentContent.dateAdded}}</span>
+                </span>
+        <br>
+        <span class="white-text commentContent">
+                 {{commentContent.content}}
+              </span>
+      </div>
+    </div>
+  </div>
+</div>

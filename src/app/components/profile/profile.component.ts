@@ -29,7 +29,6 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
     this.adminService.getUserByUsername(localStorage.getItem('username')).subscribe((res: any) => {
-      console.log(res);
       this.userObj = res.data;
       this.userDetailsLoaded = true;
       this.name = this.userObj.firstName + ' ' + this.userObj.lastName;

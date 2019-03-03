@@ -7,65 +7,18 @@
   <component name="ChangeListManager">
     <list default="true" id="6fbf580c-f62f-477b-a310-e00116694432" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dist/3rdpartylicenses.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/default-avatar.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/homepage-banner.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/searchicon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/track_api.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/js/leaflet-heat.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/map/marker-icon-2x-green.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/map/marker-icon-2x-grey.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/map/marker-icon-2x-location.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/map/marker-icon-2x-red.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/inline.6b30f267e19df679d0ad.bundle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/main.df9efbfef6eeb03bbcfa.bundle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/polyfills.0c88656f2db739f7a0ff.bundle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/styles.d41d8cd98f00b204e980.bundle.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/admin-image/admin-image.component.ts" afterPath="$PROJECT_DIR$/src/app/components/admin-image/admin-image.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/admin-images-table/admin-images-table.component.html" afterPath="$PROJECT_DIR$/src/app/components/admin-images-table/admin-images-table.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/admin-images-table/admin-images-table.component.ts" afterPath="$PROJECT_DIR$/src/app/components/admin-images-table/admin-images-table.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/create-journey/create-journey.component.css" afterPath="$PROJECT_DIR$/src/app/components/create-journey/create-journey.component.css" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/create-journey/create-journey.component.html" afterPath="$PROJECT_DIR$/src/app/components/create-journey/create-journey.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/create-journey/create-journey.component.ts" afterPath="$PROJECT_DIR$/src/app/components/create-journey/create-journey.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/edit-journey/edit-journey.component.css" afterPath="$PROJECT_DIR$/src/app/components/edit-journey/edit-journey.component.css" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/edit-journey/edit-journey.component.html" afterPath="$PROJECT_DIR$/src/app/components/edit-journey/edit-journey.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/edit-journey/edit-journey.component.ts" afterPath="$PROJECT_DIR$/src/app/components/edit-journey/edit-journey.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/edit-picture-form/edit-picture-form.component.css" afterPath="$PROJECT_DIR$/src/app/components/edit-picture-form/edit-picture-form.component.css" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/edit-picture-form/edit-picture-form.component.html" afterPath="$PROJECT_DIR$/src/app/components/edit-picture-form/edit-picture-form.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/edit-picture-form/edit-picture-form.component.ts" afterPath="$PROJECT_DIR$/src/app/components/edit-picture-form/edit-picture-form.component.ts" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app/app.module.ts" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/journey-comments-sidebar/journey-comments-sidebar.component.css" afterPath="$PROJECT_DIR$/src/app/components/journey-comments-sidebar/journey-comments-sidebar.component.css" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/journey-comments-sidebar/journey-comments-sidebar.component.html" afterPath="$PROJECT_DIR$/src/app/components/journey-comments-sidebar/journey-comments-sidebar.component.html" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/journey-comments-sidebar/journey-comments-sidebar.component.ts" afterPath="$PROJECT_DIR$/src/app/components/journey-comments-sidebar/journey-comments-sidebar.component.ts" />
       <change beforePath="$PROJECT_DIR$/src/app/components/journey-details/journey-details.component.html" afterPath="$PROJECT_DIR$/src/app/components/journey-details/journey-details.component.html" />
       <change beforePath="$PROJECT_DIR$/src/app/components/journey-image/journey-image.component.css" afterPath="$PROJECT_DIR$/src/app/components/journey-image/journey-image.component.css" />
       <change beforePath="$PROJECT_DIR$/src/app/components/journey-image/journey-image.component.html" afterPath="$PROJECT_DIR$/src/app/components/journey-image/journey-image.component.html" />
       <change beforePath="$PROJECT_DIR$/src/app/components/journey-image/journey-image.component.ts" afterPath="$PROJECT_DIR$/src/app/components/journey-image/journey-image.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/journey-preview/journey-preview.component.css" afterPath="$PROJECT_DIR$/src/app/components/journey-preview/journey-preview.component.css" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/journey-preview/journey-preview.component.html" afterPath="$PROJECT_DIR$/src/app/components/journey-preview/journey-preview.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/journey-preview/journey-preview.component.ts" afterPath="$PROJECT_DIR$/src/app/components/journey-preview/journey-preview.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/journeys-discover/journeys-discover.component.html" afterPath="$PROJECT_DIR$/src/app/components/journeys-discover/journeys-discover.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/journeys-discover/journeys-discover.component.ts" afterPath="$PROJECT_DIR$/src/app/components/journeys-discover/journeys-discover.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/my-journey-preview/my-journey-preview.component.css" afterPath="$PROJECT_DIR$/src/app/components/my-journey-preview/my-journey-preview.component.css" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/my-journey-preview/my-journey-preview.component.html" afterPath="$PROJECT_DIR$/src/app/components/my-journey-preview/my-journey-preview.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/my-journey-preview/my-journey-preview.component.ts" afterPath="$PROJECT_DIR$/src/app/components/my-journey-preview/my-journey-preview.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/my-journeys/my-journeys.component.html" afterPath="$PROJECT_DIR$/src/app/components/my-journeys/my-journeys.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/profile/profile.component.html" afterPath="$PROJECT_DIR$/src/app/components/profile/profile.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/upload-picture-form/upload-picture-form.component.css" afterPath="$PROJECT_DIR$/src/app/components/upload-picture-form/upload-picture-form.component.css" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/upload-picture-form/upload-picture-form.component.html" afterPath="$PROJECT_DIR$/src/app/components/upload-picture-form/upload-picture-form.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/user-page/user-page.component.html" afterPath="$PROJECT_DIR$/src/app/components/user-page/user-page.component.html" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/profile/profile.component.ts" afterPath="$PROJECT_DIR$/src/app/components/profile/profile.component.ts" />
       <change beforePath="$PROJECT_DIR$/src/app/export/components/export-components-obj.ts" afterPath="$PROJECT_DIR$/src/app/export/components/export-components-obj.ts" />
       <change beforePath="$PROJECT_DIR$/src/app/export/components/export-components.ts" afterPath="$PROJECT_DIR$/src/app/export/components/export-components.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/export/providers-services/export-providers.ts" afterPath="$PROJECT_DIR$/src/app/export/providers-services/export-providers.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/auth/auth.service.ts" afterPath="$PROJECT_DIR$/src/app/services/auth/auth.service.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/data/data.service.ts" afterPath="$PROJECT_DIR$/src/app/services/data/data.service.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/journey/journey.service.ts" afterPath="$PROJECT_DIR$/src/app/services/journey/journey.service.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/map/map.service.ts" afterPath="$PROJECT_DIR$/src/app/services/map/map.service.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/utility/utility.service.ts" afterPath="$PROJECT_DIR$/src/app/services/utility/utility.service.ts" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/polyfills.ts" afterPath="$PROJECT_DIR$/src/polyfills.ts" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" afterPath="$PROJECT_DIR$/src/styles.css" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/comments/comments.service.ts" afterPath="$PROJECT_DIR$/src/app/services/comments/comments.service.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -79,52 +32,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="comments.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/services/comments/comments.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="journey-image.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/components/journey-image/journey-image.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/profile/profile.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/services/data/data.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -153,10 +61,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/app/components/login/login.component.html" />
-        <option value="$PROJECT_DIR$/src/app/components/register/register.component.html" />
-        <option value="$PROJECT_DIR$/src/app/components/homepage/homepage.component.html" />
-        <option value="$PROJECT_DIR$/src/app/components/upload-picture-form/upload-picture-form.component.ts" />
         <option value="$PROJECT_DIR$/tslint.json" />
         <option value="$PROJECT_DIR$/src/app/components/journey-details/journey-details.component.css" />
         <option value="$PROJECT_DIR$/src/styles.css" />
@@ -164,11 +68,6 @@
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/app/services/map/map.service.ts" />
         <option value="$PROJECT_DIR$/src/app/services/auth/auth.service.ts" />
-        <option value="$PROJECT_DIR$/src/app/components/journey-details/journey-details.component.html" />
-        <option value="$PROJECT_DIR$/src/app/components/journey-comments-sidebar/journey-comments-sidebar.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/components/journey-comments-sidebar/journey-comments-sidebar.component.css" />
-        <option value="$PROJECT_DIR$/src/app/components/journey-image/journey-image.component.css" />
-        <option value="$PROJECT_DIR$/src/app/components/journey-comments-sidebar/journey-comments-sidebar.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/my-journey-preview/my-journey-preview.component.css" />
         <option value="$PROJECT_DIR$/src/app/components/journeys-discover/journeys-discover.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/my-journeys/my-journeys.component.html" />
@@ -183,13 +82,11 @@
         <option value="$PROJECT_DIR$/src/app/components/edit-journey/edit-journey.component.css" />
         <option value="$PROJECT_DIR$/src/app/components/upload-picture-form/upload-picture-form.component.html" />
         <option value="$PROJECT_DIR$/src/app/services/data/data.service.ts" />
-        <option value="$PROJECT_DIR$/src/app/components/journey-image/journey-image.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/my-journey-preview/my-journey-preview.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/edit-picture-form/edit-picture-form.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/edit-picture-form/edit-picture-form.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/create-journey/create-journey.component.css" />
         <option value="$PROJECT_DIR$/src/app/components/create-journey/create-journey.component.html" />
-        <option value="$PROJECT_DIR$/src/app/components/journeys-discover/journeys-discover.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/journey-preview/journey-preview.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/create-journey/create-journey.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/journey-preview/journey-preview.component.css" />
@@ -198,12 +95,23 @@
         <option value="$PROJECT_DIR$/src/app/components/admin-images-table/admin-images-table.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/edit-journey/edit-journey.component.ts" />
         <option value="$PROJECT_DIR$/src/app/export/providers-services/export-providers.ts" />
+        <option value="$PROJECT_DIR$/src/app/services/journey/journey.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/journey-details/journey-details.component.html" />
+        <option value="$PROJECT_DIR$/src/app/services/comments/comments.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/src/app/export/components/export-components-obj.ts" />
         <option value="$PROJECT_DIR$/src/app/export/components/export-components.ts" />
-        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/src/app/services/journey/journey.service.ts" />
-        <option value="$PROJECT_DIR$/src/app/services/comments/comments.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/comment-wrapper/comment-wrapper.component.css" />
+        <option value="$PROJECT_DIR$/src/app/components/comment-wrapper/comment-wrapper.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/comment-wrapper/comment-wrapper.component.html" />
+        <option value="$PROJECT_DIR$/src/app/components/journeys-discover/journeys-discover.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/journey-image/journey-image.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/journey-image/journey-image.component.css" />
+        <option value="$PROJECT_DIR$/src/app/components/journey-image/journey-image.component.html" />
+        <option value="$PROJECT_DIR$/src/app/components/journey-comments-sidebar/journey-comments-sidebar.component.html" />
+        <option value="$PROJECT_DIR$/src/app/components/journey-comments-sidebar/journey-comments-sidebar.component.css" />
+        <option value="$PROJECT_DIR$/src/app/components/journey-comments-sidebar/journey-comments-sidebar.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/profile/profile.component.ts" />
       </list>
     </option>
   </component>
@@ -289,8 +197,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -322,46 +228,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="journey-comments-sidebar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Photogram-Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Photogram-Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="journey-image" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Photogram-Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Photogram-Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Photogram-Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Photogram-Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="export" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Photogram-Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Photogram-Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="export" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Photogram-Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Photogram-Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="export" type="462c0819:PsiDirectoryNode" />
-              <item name="providers-services" type="462c0819:PsiDirectoryNode" />
+              <item name="journeys-discover" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Photogram-Client" type="b2602c69:ProjectViewProjectNode" />
@@ -369,14 +236,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Photogram-Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Photogram-Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="comments" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Photogram-Client" type="b2602c69:ProjectViewProjectNode" />
@@ -385,14 +244,6 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Photogram-Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Photogram-Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-              <item name="journey" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Photogram-Client" type="b2602c69:ProjectViewProjectNode" />
@@ -418,6 +269,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -435,17 +288,17 @@
     <property name="SearchEverywhereHistoryKey" value="storage&#9;null&#9;null&#10;icon&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\PHOTOGRAM\application\Photogram-Client\src\assets\map" />
-      <recent name="E:\Photograph\client\src" />
-      <recent name="E:\Photograph\client\src\app\components\login" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\PHOTOGRAM\application\Photogram-Client\src\app\services\comments" />
       <recent name="E:\PHOTOGRAM\application\Photogram-Client\src\assets\map" />
       <recent name="E:\PHOTOGRAM\application\Photogram-Client\src\assets\images" />
       <recent name="E:\PHOTOGRAM\application\Photogram-Client\src\app\services\utility" />
       <recent name="E:\PHOTOGRAM\application\Photogram-Client\src\assets" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PHOTOGRAM\application\Photogram-Client\src\assets\map" />
+      <recent name="E:\Photograph\client\src" />
+      <recent name="E:\Photograph\client\src\app\components\login" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -613,11 +466,13 @@
       <workItem from="1551027118903" duration="5701000" />
       <workItem from="1551183101378" duration="692000" />
       <workItem from="1551212510238" duration="744000" />
+      <workItem from="1551459807376" duration="2570000" />
+      <workItem from="1551612225159" duration="5428000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="658929000" />
+    <option name="totallyTimeSpent" value="666927000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -651,27 +506,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2082879" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32388222" sideWeight="0.50394946" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24863686" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.2093784" sideWeight="0.49605057" order="11" side_tool="false" content_ui="tabs" x="583" y="235" width="939" height="508" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19536598" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2082879" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -686,27 +520,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/components/login/login.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/filters-container/filters-container.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="35" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/filters-container/filters-container.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="13" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/filters-container/filters-container.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="759">
@@ -725,41 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5588">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/journey-details/journey-details.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/journey-details/journey-details.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="48" lean-forward="false" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/journey-comments-sidebar/journey-comments-sidebar.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2392">
-          <caret line="104" column="27" lean-forward="false" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/journey-image/journey-image.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6992">
-          <caret line="304" column="27" lean-forward="false" selection-start-line="304" selection-start-column="27" selection-end-line="304" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/journey-comments-sidebar/journey-comments-sidebar.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="125" lean-forward="false" selection-start-line="22" selection-start-column="125" selection-end-line="22" selection-end-column="125" />
         </state>
       </provider>
     </entry>
@@ -861,13 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/journey-image/journey-image.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="144" column="92" lean-forward="false" selection-start-line="144" selection-start-column="92" selection-end-line="144" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/create-journey/create-journey.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -920,13 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/journeys-discover/journeys-discover.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="15" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/admin-images-table/admin-images-table.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -938,13 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/journeys-discover/journeys-discover.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -976,39 +733,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/export/components/export-components-obj.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="55" column="57" lean-forward="false" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/export/components/export-components.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="55" column="33" lean-forward="false" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/services/journey/journey.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/journey-comments-sidebar/journey-comments-sidebar.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1289">
-          <caret line="84" column="27" lean-forward="true" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1046,38 +774,163 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/services/data/data.service.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/services/comments/comments.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="529">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/services/comments/comments.service.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        <state relative-caret-position="276">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/journey-details/journey-details.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/export/components/export-components-obj.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="26" column="125" lean-forward="false" selection-start-line="26" selection-start-column="125" selection-end-line="26" selection-end-column="125" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#49#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/profile/profile.component.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/export/components/export-components.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="691">
+          <caret line="57" column="25" lean-forward="false" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#49#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/services/data/data.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/comment-wrapper/comment-wrapper.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/comment-wrapper/comment-wrapper.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/comment-wrapper/comment-wrapper.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="99" lean-forward="false" selection-start-line="16" selection-start-column="99" selection-end-line="16" selection-end-column="99" />
+          <folding>
+            <element signature="e#0#57#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/journeys-discover/journeys-discover.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/journey-details/journey-details.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/journey-image/journey-image.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="335" column="0" lean-forward="false" selection-start-line="335" selection-start-column="0" selection-end-line="339" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/journey-image/journey-image.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/journey-image/journey-image.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+        <state relative-caret-position="346">
+          <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!block;n#prepareComment#0;n#JourneyImageComponent#0" expanded="false" />
+            <element signature="n#!!block;n#submitComment#0;n#JourneyImageComponent#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/journey-comments-sidebar/journey-comments-sidebar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-206">
+          <caret line="34" column="117" lean-forward="false" selection-start-line="34" selection-start-column="117" selection-end-line="34" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/journey-comments-sidebar/journey-comments-sidebar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/journey-comments-sidebar/journey-comments-sidebar.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1036">
+          <caret line="72" column="19" lean-forward="false" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/journeys-discover/journeys-discover.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-575">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/profile/profile.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="30" column="99" lean-forward="false" selection-start-line="30" selection-start-column="99" selection-end-line="30" selection-end-column="99" />
           <folding />
         </state>
       </provider>

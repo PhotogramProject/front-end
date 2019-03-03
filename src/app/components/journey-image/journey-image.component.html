@@ -18,7 +18,8 @@
       <img *ngIf="photo.comment == ''" alt="Photogram Image taken with {{photo.make}} {{photo.model}}"
            class="modal-content modal-image" id="img-{{photo.id}}" src="{{imagePathLarge}}">
       <div class="modal-content">
-        <p class="white-text left photoComment"><b class="text-enlarge" *ngIf="photo.comment.length > 0">Допълнителна информация: </b> {{photo.comment}}</p>
+        <p class="white-text left photoComment"><b class="text-enlarge" *ngIf="photo.comment.length > 0">Допълнителна
+          информация: </b> {{photo.comment}}</p>
       </div>
     </div>
     <div class="col s12 m12 l4">
@@ -157,37 +158,20 @@
         <form class="col s12 m12 l12 white-text">
           <div class="row">
             <div class="input-field col s12 ">
-              <textarea id="icon_prefix2" class="materialize-textarea commentTextarea" (keyup)="prepareComment($event)"></textarea>
+              <textarea id="icon_prefix2" class="materialize-textarea commentTextarea"
+                        (keyup)="prepareComment($event)"></textarea>
               <label for="icon_prefix2">Коментирайте снимката</label>
               <a class="waves-effect waves-light btn-small blue" (click)="submitComment()">Коментирай</a>
             </div>
           </div>
         </form>
       </div>
+        <app-comment-wrapper *ngFor="let commentContent of imageComments"
+                             [commentContent]="commentContent"
+                             [type]="type">
+        </app-comment-wrapper>
 
-      <div *ngFor="let a of imageComments">
-        <div class="col s12 m12 l12">
-          <div class="white-text">
-            <div class="row commentWrapper">
-              <div class="row col s12 m12 l1 ">
-                  <a routerLink="/users/{{a.user}}">
-                    <img src="{{a.avatarSrc}}" width="60" height="60" alt=""
-                         class="circle responsive-img">
-                  </a>
-              </div>
-              <div class="row col s12 m12 l11 left">
-                <span class="white-text commentAuthor">
-                  <a routerLink="/users/{{a.user}}"><b>{{a.name}} </b>({{a.user}})</a><span class="grey-text"> | Добавен на: {{a.date}}</span>
-                </span>
-                <br>
-                <span class="white-text commentContent">
-                {{a.comment}}
-              </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <a *ngIf="upcommingResults" (click)="loadMoreComments()" class="loadMoreCommentsButton waves-effect waves-light btn blue">Заредете още коментари</a>
     </div>
   </div>
 </div>
