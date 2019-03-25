@@ -25,4 +25,9 @@ export class CommentsService {
     });
   }
 
+  deleteSelectedComment(id){
+    return this.http.delete(`${this.phpURL}/api/comments/delete.php/${id}`, {
+      headers: new HttpHeaders().set('Authentication', `Bearer ${localStorage.getItem('authtoken')}`)
+    });
+  }
 }

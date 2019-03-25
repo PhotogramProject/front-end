@@ -2,3 +2,13 @@
 .leaflet-container{
   background: #75cff0; /* Default sea color of the map layer */
 }
+/*
+
+.leaflet-popup-content{
+  margin: 0 !important;
+}
+*/
+
+.over-index{
+  z-index: 999999999999999999999 !important;
+}

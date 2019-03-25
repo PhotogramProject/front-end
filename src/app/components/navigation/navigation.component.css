@@ -27,19 +27,19 @@ i.menu-icon{
 }
 
 .leftSidenav a.menu-item {
-  border-left: 5px solid #7e57c2;
   cursor: pointer;
   user-select: none;
 }
 
 .leftSidenav a.menu-item:hover {
-  background: linear-gradient(to right, #7e57c2, #2196f3);
+  background: #424242;
   color: #ffffff;
 }
 
 .nav-open-button {
   color: white;
-  background: linear-gradient(to right, #7e57c2, #2196f3);
+/*  background: linear-gradient(to right, #7e57c2, #2196f3);*/
+  background: #1565c0;
 }
 
 .leftSidenav .closebtn {

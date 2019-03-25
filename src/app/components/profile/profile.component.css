@@ -29,14 +29,13 @@
 
 .user-role-wrapper{
   text-align: right;
-  margin-top: 20px;
-  margin-right: 10px;
+  margin-top: 9px;
 }
 
 span.user-role{
   background-color: #64b5f6;
-  border-radius: 25px;
-  padding: 5px 10px;
+  border-radius: 0 5px 0 15px;
+  padding: 10px 10px;
   color: white;
   font-weight: 600;
 }
@@ -161,4 +160,15 @@ input[type=email]:not(.browser-default):focus:not([readonly]) + label {
 
 #userAvatarProfile{
   display: none;
+}
+
+.user-data-wrapper-background{
+  background: url("./../../../assets/images/user-page-background.jpg");
+  background-position: center;
+  background-size: cover ;
+  background-repeat: no-repeat;
+}
+
+.user-details-information{
+  margin-bottom: 0 !important;
 }

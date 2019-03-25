@@ -10,6 +10,7 @@
       <div class="row col s12 m12 l11 left">
                 <span class="commentAuthor">
                   <a routerLink="/users/{{commentContent.username}}"><b>{{commentContent.author}} </b>({{commentContent.username}})</a><span class="grey-text text-darken-2"> | Добавен на: {{commentContent.dateAdded}}</span>
+                  <span *ngIf="isMine" class="grey-text text-darken-2"> |<b class="red-text text-darken-2" (click)="deleteComment('journey')" style="cursor: pointer;"> Изтрий </b></span>
                 </span>
         <br>
         <span class="commentContent">
@@ -32,6 +33,7 @@
       <div class="row col s12 m12 l11 left">
                 <span class="white-text commentAuthor">
                   <a routerLink="/users/{{commentContent.username}}"><b>{{commentContent.author}} </b>({{commentContent.username}})</a><span class="grey-text"> | Добавен на: {{commentContent.dateAdded}}</span>
+                  <span *ngIf="isMine" class="grey-text text-darken-2"> |<b class="red-text text-darken-2" (click)="deleteComment('image')" style="cursor: pointer;"> Изтрий </b></span>
                 </span>
         <br>
         <span class="white-text commentContent">

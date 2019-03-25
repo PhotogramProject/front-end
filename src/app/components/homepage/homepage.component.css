@@ -51,7 +51,7 @@ input[type="submit"] {
 
 .morebtn{
   z-index: auto;
-  background: linear-gradient(to right, #7e57c2 , #2196f3) !important;
+  background: dodgerblue !important;
   font-weight: 500;
 }
 
@@ -66,7 +66,7 @@ input[type="submit"] {
 }
 
 .home-icon{
-  background: -webkit-linear-gradient( left, #7e57c2 , #2196f3);
+  background: dodgerblue;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 20px;

@@ -42,10 +42,15 @@ export class UtilityService {
   }
 
   generateMarkerPopup(pht, type) {
+    let phtThumb = pht.thumbnail || pht.imgsrc || (this.dataService.getAPI().uploads + (pht.fileName + '_s.jpg'));
+
     if (type === 'create') {
       return `
-        <div>
-            <img class="popup-image" src="${pht.thumbnail || pht.imgsrc}" style="max-width: 100%; z-index: 1;">
+            <img class="popup-image" src="${phtThumb}" style="
+            z-index: 1; 
+            width: 100%;
+            border-radius: 10px;
+            ">
           <table class="responsive-table">
             <tbody style="font-size: 14px;">
               <tr>
@@ -61,13 +66,15 @@ export class UtilityService {
                 </td>
               </tr>
             </tbody>
-          </table>
-         </div>`;
+          </table>`;
     }
     else if (type === 'details' || type === 'edit') {
       return $(`
         <div>
-            <img class="hoverable popup-image" src="${pht.thumbnail || pht.imgsrc}" style="max-width: 100%; z-index: 1; cursor: pointer;">
+            <img class="hoverable popup-image" src="${phtThumb}" style=" z-index: 1; 
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;">
           <table class="responsive-table">
             <tbody style="font-size: 14px;">
               <tr>
@@ -87,8 +94,11 @@ export class UtilityService {
     else if (type === 'locations') {
       return `<div>
           <a  href="/journeys/show/${pht.journeyId}">
-            <img class="hoverable popup-image" src="${this.dataService.getAPI().uploads + pht.fileName}"  
-            style="max-width: 100%; z-index: 1; cursor: pointer;">
+            <img class="hoverable popup-image" src="${phtThumb}"  
+            style=" z-index: 1; 
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;">
           </a>
           <table class="responsive-table">
             <tbody style="font-size: 14px;">

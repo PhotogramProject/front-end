@@ -83,7 +83,6 @@ export class CreateJourneyComponent implements OnInit {
           });
         };
         fileReader.onerror = (error) => {
-          console.error(error);
           this.toastrService.toast('Възникна проблем при качването на снимка.');
         };
       }
@@ -107,12 +106,12 @@ export class CreateJourneyComponent implements OnInit {
           for(let fileObject of this.selectedFiles){
             this.journeyService.uploadImage(fileObject.file, fileObject.details.comment, res.data.journeyId).subscribe((imageRes: any) => {
               this.uploadedImagesToServerCount++;
-              if(this.uploadedImagesToServerCount >= this.imagesForUpload){
+              if(this.uploadedImagesToServerCount >= this.imagesForUpload - (this.selectedPictures.length - this.donePhotos.length)){
                 this.uploadingJourneyProcess = false;
                 this.toastrService.successToast('Успешно създадохте пътешествието.');
                 this.router.navigate(['/journeys/discover']);
               }
-            });
+            }, err1 => {console.log(err1); /* Useless error handling statement */ });
           }
           // this.clearForm();
           return;

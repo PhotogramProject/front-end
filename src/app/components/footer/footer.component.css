@@ -2,11 +2,24 @@
   font-size: 16px;
 }
 
-footer{
-  background: -webkit-linear-gradient( left, #7e57c2 , #2196f3);
-  user-select: none;
-}
 
 .page-footer{
   padding-top: 0;
+}
+
+footer{
+  background-image: url("./../../../assets/images/footer-background.jpg");
+  user-select: none;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-footer-info{
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.footer-copyright{
+  background: rgba(0,0,0, 0.3);
 }

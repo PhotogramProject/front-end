@@ -57,5 +57,15 @@ input[type="submit"] {
   font-size: 18px
 }
 
+.goToTopButton{
+  cursor: pointer;
+  background: transparent !important;
+  color: #424242;
+  font-size: 50px !important;
+  font-weight: 800 !important;
+  font-family: "Courier New";
+  margin-left: -200px !important;
+  right: 60px !important;
+}
 
 

@@ -4,7 +4,7 @@
 }
 
 .btn-upload {
-  background: linear-gradient(to right, #7e57c2, #2196f3) !important;
+  background: green !important;
 }
 
 .uploadedPhotosWrapper {
@@ -67,7 +67,7 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label, textarea:not
 }
 
 .map-container{
-  background: linear-gradient(0deg, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 100%);
+  background: white;
 }
 
 .redText{
@@ -114,4 +114,8 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label, textarea:not
 }
 .uploadingProgress{
   background-color: #cccccc;
+}
+
+.uploadingJourneyModal{
+  z-index: 999;
 }

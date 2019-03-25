@@ -17,33 +17,38 @@
 </div>
 
 <div *ngIf="userDetailsLoaded" class="data-wrapper">
-  <div class="container center row">
-    <div class="divider"></div>
-    <div class="divider"></div>
-    <div class="container row">
-      <div *ngIf="userDetailsLoaded" class="col s12 m12 l12 user-data-container">
-        <div class="row user-role-wrapper">
-          <span class="user-role">{{this.userObj.role}}</span>
-        </div>
-        <div class="row user-data-wrapper center">
-          <img src="{{this.userObj.avatar}}" alt="Profile picture of {{this.userObj.name}}" class="responsive-image circle avatar-placeholder"/>
-          <div>
-            <p class="user-name">{{this.userObj.name}}</p>
-            <p class="username">({{this.userObj.username}})</p>
-          </div>
-          <div class="row user-data-wrapper center">
-            <div class="col s12 m12 l6">
-              <p class="additional-heading">Пътешествия</p>
-              <p class="additional-text">{{this.userObj.totalJourneys}}</p>
+  <div class="user-data-wrapper-background">
+    <div class="container center row">
+      <div class="divider"></div>
+      <div class="divider"></div>
+        <div class="container row user-details-information">
+          <div *ngIf="userDetailsLoaded" class="col s12 m12 l12 user-data-container">
+            <div class="row user-role-wrapper">
+              <span class="user-role">{{this.userObj.role}}</span>
             </div>
-            <div class="col s12 m12 l6"><p class="additional-heading">Имейл</p>
-              <p class="additional-text">{{this.userObj.email}}</p></div>
+            <div class="row user-data-wrapper center">
+              <img src="{{this.userObj.avatar}}" alt="Profile picture of {{this.userObj.name}}"
+                   class="responsive-image circle avatar-placeholder"/>
+              <div>
+                <p class="user-name">{{this.userObj.name}}</p>
+                <p class="username">({{this.userObj.username}})</p>
+              </div>
+              <div class="row user-data-wrapper center">
+                <div class="col s12 m12 l6">
+                  <p class="additional-heading">Пътешествия</p>
+                  <p class="additional-text">{{this.userObj.totalJourneys}}</p>
+                </div>
+                <div class="col s12 m12 l6"><p class="additional-heading">Имейл</p>
+                  <p class="additional-text">{{this.userObj.email}}</p></div>
+              </div>
+            </div>
           </div>
+          <div class="divider"></div>
+          <div class="divider"></div>
         </div>
+        <div class="divider"></div>
+        <div class="divider"></div>
       </div>
-      <div class="divider"></div>
-      <div class="divider"></div>
-    </div>
   </div>
 
   <div class="row">

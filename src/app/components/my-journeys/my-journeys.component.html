@@ -26,11 +26,10 @@
   </div>
 </div>
 
-<div class="fixed-action-btn">
-  <a class="btn-floating btn-large grey waves-effect waves-light" (click)="scrollToTop()">
-    <i class="large material-icons">keyboard_arrow_up</i>
-  </a>
+<div class="fixed-action-btn goToTopButton">
+  <a (click)="scrollToTop()">^</a>
 </div>
+
 
 <div *ngIf="!upcommingResults && journeysArr.length === 0">
   <div class="container center red-text">

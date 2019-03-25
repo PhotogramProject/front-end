@@ -23,7 +23,7 @@
       <form>
         <div class="file-field input-field">
           <div class="btn btn-upload">
-            <span>Снимки</span>
+            <span>Добавете снимки</span>
             <input (change)="onPictureSelectorChange($event)" type="file" accept=".jpg, .jpeg" multiple class="uploadFileInput">
           </div>
           <div class="file-path-wrapper">
@@ -61,7 +61,7 @@
       <div id="uploadJourneyMap"></div>
     </div>
     <div class="divider"></div>
-      <button class="btn green lighten-1" (click)="createJourney()">Създай Пътешествието</button>
+      <button class="btn btn-upload" (click)="createJourney()">Създай Пътешествието</button>
     <button class="btn grey" (click)="cancelCreateJourney()">Отмени</button>
   </div>
 
@@ -69,7 +69,7 @@
 </div>
 
 <div *ngIf="uploadingJourneyProcess">
-  <div  class="modal">
+  <div  class="modal uploadingJourneyModal">
     <div class="modal-content">
     <div >
       <h5><b><span class="grey-text text-darken-1">Създаване на пътешествието:</span> <i class="grey-text text-darken-4">{{journeyName}}</i></b></h5>
