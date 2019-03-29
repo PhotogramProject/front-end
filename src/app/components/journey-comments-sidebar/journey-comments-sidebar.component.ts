@@ -76,12 +76,14 @@ export class JourneyCommentsSidebarComponent implements OnInit {
         author: Number(localStorage.getItem('userId')),
         date_added: `${new Date().getFullYear()}-${('0' + (new Date().getMonth() + 1)).slice(-2)}-${('0' + (new Date().getDate())).slice(-2)}`
       }).subscribe((res: any) => {
+        let commentID = res.data.id;
         if (!res.success || res === null) {
           this.toastr.errorToast(res.msg);
         } else {
           this.toastr.successToast(res.msg);
           this.adminService.getUserByUsername(localStorage.getItem('username')).subscribe((res: any) => {
             this.journeyComments.unshift({
+              id: commentID,
               content: this.myComment,
               dateAdded: `${new Date().getFullYear()}-${('0' + (new Date().getMonth() + 1)).slice(-2)}-${('0' + (new Date().getDate())).slice(-2)}`,
               author: localStorage.getItem('name'),
